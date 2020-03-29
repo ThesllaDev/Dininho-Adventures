@@ -1,9 +1,8 @@
 *,h1{margin: 0px; padding: 0px;}
 
 body{
-    background-color: #7E5002;
+    background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
     margin: 0px;
-    padding: 0px;
 }
 
 /* CABEÇALHO DO SITE */
@@ -19,8 +18,11 @@ header h1{
     text-indent: -9999px;
 }
 
-.logo{
+header a{
     position: absolute;
+}
+
+.logo{
     width: 190px;
     max-width: 100%;
 }
@@ -29,13 +31,18 @@ header h1{
     max-width: 100%;
 }
 
+/* SEÇÃO GERAL */
+
 main{
     background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
 }
 
-section h1{
+/* SEÇÃO AJUDE */
+
+section .titulo-principal{
     font-family: 'Bungee', cursive;
     font-size: 28px;
+    line-height: 36px;
     text-align: center;
     color: #FCFDFC;
     margin: 50px 0px;
@@ -48,4 +55,116 @@ section p{
     font-weight: bold;
     line-height: 20px;
     color: #fff;
+    margin: 17px;
+}
+
+/* DIVISOR DE SEÇÕES */
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+div img{
+    margin: 0px 8px;
+    width: 18px;
+    height: 22px;
+}
+
+hr{
+    width: 100%;
+    height: 2px;
+    background-color: #faffff;
+    border: none;
+}
+
+/* SEÇÃO DO TRAILER */
+
+section video{
+    width: 100%;
+}
+
+section a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 196px;
+    height: 50px;
+    margin: 20px auto;
+    background-image: url(../img/Btn.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Nunito', sans-serif;
+    color: #faffff;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+/* SEÇÃO SOBRE O JOGO */
+
+section h1{
+    font-family: 'Bungee', cursive;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;
+    color: #73263D;
+}
+
+section ul li{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 17px;
+    list-style: none;
+    color: #3D1132;
+}
+
+/* DIVISOR FINAL */
+
+.ninho{
+    width: 63px;
+    height: 58px;
+}
+
+footer p{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 16px;
+    color: #050914;
+    text-align: center;
+    margin: 10px;
+}
+
+footer ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+footer ul li{
+    text-indent: -9999px;
+}
+
+li a{
+    display: flex;
+    width: 30px;
+    height: 28px;
+}
+
+[href="https://www.twitch.tv/dininho"]{
+    background-image: url(../img/twitch.png);
+}
+
+[href="https://www.twitter.com/dinobonoide"]{
+    background-image: url(../img/twitter.png);
+}
+
+[href="https://discord.gg/96hejEn"]{
+    background-image: url(../img/discord.png);
 }
