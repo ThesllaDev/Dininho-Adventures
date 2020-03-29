@@ -28,12 +28,14 @@ header a{
 }
 
 .capa{
+    width: 100%;
     max-width: 100%;
 }
 
 /* SEÇÃO GERAL */
 
 main{
+    width: 100%;
     background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
 }
 
@@ -167,4 +169,43 @@ li a{
 
 [href="https://discord.gg/96hejEn"]{
     background-image: url(../img/discord.png);
+}
+
+@media only screen and (min-width: 600px){
+
+    .logo{
+        width: 100%;
+    }
+
+    section .titulo-principal{
+        font-size: 50px;
+        line-height: 150px;
+        margin: 0px;
+    }
+
+    section p{
+        font-size: 24px;
+        line-height: 33px;
+        margin: 30px 90px;
+    }
+
+    section h1{
+        font-size: 48px;
+        line-height: 58px;
+    }
+
+    section ul li{
+        text-align: center;
+        font-size: 24px;
+        line-height: 33px;
+        margin: 30px 90px;
+    }
+
+    footer ul{
+        justify-content: center;
+    }
+
+    footer ul li{
+        margin: 0px 60px;
+    }
 }
