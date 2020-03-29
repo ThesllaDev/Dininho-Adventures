@@ -1,0 +1,18 @@
+*{margin: 0px; padding: 0px;}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1{
+    text-indent: -9999px;
+}
+
+.logo{
+    position: absolute;
+    width: 190px;
+    max-width: 100%;
+}
