@@ -1,4 +1,12 @@
-*{margin: 0px; padding: 0px;}
+*,h1{margin: 0px; padding: 0px;}
+
+body{
+    background-color: #7E5002;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CABEÇALHO DO SITE */
 
 header{
     width: 100%;
@@ -15,4 +23,29 @@ header h1{
     position: absolute;
     width: 190px;
     max-width: 100%;
+}
+
+.capa{
+    max-width: 100%;
+}
+
+main{
+    background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
+}
+
+section h1{
+    font-family: 'Bungee', cursive;
+    font-size: 28px;
+    text-align: center;
+    color: #FCFDFC;
+    margin: 50px 0px;
+}
+
+section p{
+    font-size: 15px;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: bold;
+    line-height: 20px;
+    color: #fff;
 }
