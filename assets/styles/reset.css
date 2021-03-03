@@ -1,0 +1,27 @@
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+p {
+  line-height: 1.5;
+  max-width: 80ch;
+}
+
+a:focus {
+  outline: 2px dotted #001;
+  outline-offset: .05em;
+}
+
+ul {
+  list-style: none;
+}
+/*# sourceMappingURL=reset.css.map */
