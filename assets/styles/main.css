@@ -1,211 +1,213 @@
-*,h1{margin: 0px; padding: 0px;}
-
-body{
-    background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
-    margin: 0px;
+:root {
+  font-size: calc(1vw + 1vh + .5vmin);
 }
 
-/* CABEÇALHO DO SITE */
-
-header{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-header h1{
-    text-indent: -9999px;
+h1,
+h2,
+p {
+  line-height: 1.5;
+  max-width: 80ch;
 }
 
-header a{
-    position: absolute;
+a:focus {
+  outline: 2px dotted #001;
+  outline-offset: .05em;
 }
 
-.logo{
-    width: 190px;
-    max-width: 100%;
+ul {
+  list-style: none;
 }
 
-.capa{
-    width: 100%;
-    max-width: 100%;
+body {
+  font-family: 'Nunito', sans-serif;
 }
 
-/* SEÇÃO GERAL */
-
-main{
-    width: 100%;
-    background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
+h1,
+h2,
+h3 {
+  font-family: 'Bungee', cursive;
 }
 
-/* SEÇÃO AJUDE */
-
-section .titulo-principal{
-    font-family: 'Bungee', cursive;
-    font-size: 28px;
-    line-height: 36px;
-    text-align: center;
-    color: #FCFDFC;
-    margin: 50px 0px;
+header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
 }
 
-section p{
-    font-size: 15px;
-    font-family: 'Nunito', sans-serif;
-    text-align: center;
-    font-weight: bold;
-    line-height: 20px;
-    color: #fff;
-    margin: 17px;
+header h1 {
+  display: none;
 }
 
-/* DIVISOR DE SEÇÕES */
-
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
+header a {
+  position: absolute;
 }
 
-div img{
-    margin: 0px 8px;
-    width: 18px;
-    height: 22px;
+header a .logo {
+  max-width: 100%;
 }
 
-hr{
-    width: 100%;
-    height: 2px;
-    background-color: #faffff;
-    border: none;
+header .capa {
+  width: 100%;
 }
 
-/* SEÇÃO DO TRAILER */
-
-section video{
-    width: 100%;
+main {
+  background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
+  width: 100%;
 }
 
-section a{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 196px;
-    height: 50px;
-    margin: 20px auto;
-    background-image: url(../img/Btn.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-family: 'Nunito', sans-serif;
-    color: #faffff;
-    font-weight: 600;
-    font-size: 20px;
-    text-decoration: none;
+main .section-dino h2 {
+  color: #FCFDFC;
+  padding: 50px 20px;
+  text-align: center;
 }
 
-/* SEÇÃO SOBRE O JOGO */
-
-section h1{
-    font-family: 'Bungee', cursive;
-    font-size: 26px;
-    line-height: 26px;
-    text-align: center;
-    color: #73263D;
+main .text-intro {
+  color: #fff;
+  font-weight: bold;
+  margin: 17px;
+  text-align: center;
 }
 
-section ul li{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
-    margin: 10px 17px;
-    list-style: none;
-    color: #3D1132;
+main .separator-line {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
 }
 
-/* DIVISOR FINAL */
-
-.ninho{
-    width: 63px;
-    height: 58px;
+main .separator-line .egg-dino {
+  margin: 20px;
 }
 
-footer p{
-    font-family: 'Nunito', sans-serif;
-    font-weight: bold;
-    font-size: 12px;
-    line-height: 16px;
-    color: #050914;
-    text-align: center;
-    margin: 10px;
+main .separator-line hr {
+  background-color: #faffff;
+  border: none;
+  height: 2px;
+  width: 100%;
 }
 
-footer ul{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
+main .separator-line .ninho {
+  margin: 20px;
 }
 
-footer ul li{
-    text-indent: -9999px;
+main .video-dino {
+  padding: 20px;
 }
 
-li a{
-    display: flex;
-    width: 30px;
-    height: 28px;
+main .video-dino video {
+  -webkit-box-shadow: 15px 15px 10px #001;
+          box-shadow: 15px 15px 10px #001;
+  width: 100%;
 }
 
-[href="https://www.twitch.tv/dininho"]{
-    background-image: url(../img/twitch.png);
+main .video-dino .btn-play {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url("../img/btn.png");
+  background-size: 100%;
+  color: #faffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 20px;
+  height: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px auto;
+  text-decoration: none;
+  -webkit-transition: -webkit-transform 100ms linear;
+  transition: -webkit-transform 100ms linear;
+  transition: transform 100ms linear;
+  transition: transform 100ms linear, -webkit-transform 100ms linear;
+  width: 200px;
 }
 
-[href="https://www.twitter.com/dinobonoide"]{
-    background-image: url(../img/twitter.png);
+main .video-dino .btn-play:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
 }
 
-[href="https://discord.gg/96hejEn"]{
-    background-image: url(../img/discord.png);
+main .about-game h3 {
+  color: #73263D;
+  text-align: center;
 }
 
-@media only screen and (min-width: 600px){
-
-    .logo{
-        width: 100%;
-    }
-
-    section .titulo-principal{
-        font-size: 50px;
-        line-height: 150px;
-        margin: 0px;
-    }
-
-    section p{
-        font-size: 24px;
-        line-height: 33px;
-        margin: 30px 90px;
-    }
-
-    section h1{
-        font-size: 48px;
-        line-height: 58px;
-    }
-
-    section ul li{
-        text-align: center;
-        font-size: 24px;
-        line-height: 33px;
-        margin: 30px 90px;
-    }
-
-    footer ul{
-        justify-content: center;
-    }
-
-    footer ul li{
-        margin: 0px 60px;
-    }
+main .about-game li {
+  color: #3D1132;
+  font-weight: bold;
+  margin: 10px 17px;
+  max-width: 80ch;
+  text-align: center;
 }
+
+main .requirements dl {
+  color: #3D1132;
+  font-weight: bold;
+  margin: 10px 17px;
+  max-width: 80ch;
+  text-align: center;
+}
+
+main .requirements h3 {
+  color: #73263D;
+  text-align: center;
+}
+
+main .copyright {
+  color: #050914;
+  margin: 10px;
+  text-align: center;
+}
+
+main .social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-bottom: 30px;
+}
+
+main .social-media a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1px;
+  height: 28px;
+  width: 30px;
+}
+
+main .social-media [href="https://www.twitch.tv/dininho"] {
+  background-image: url("../img/twitch.png");
+}
+
+main .social-media [href="https://www.twitter.com/dinobonoide"] {
+  background-image: url("../img/twitter.png");
+}
+
+main .social-media [href="https://discord.gg/96hejEn"] {
+  background-image: url("../img/discord.png");
+}
+/*# sourceMappingURL=main.css.map */
