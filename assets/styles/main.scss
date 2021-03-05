@@ -1,19 +1,19 @@
 @import "reset.scss";
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: "Nunito", sans-serif;
 }
 
 h1,
 h2,
 h3 {
-    font-family: 'Bungee', cursive;
+    font-family: "Bungee", cursive;
 }
 
 header {
     align-items: center;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     h1 {
         display: none;
     }
@@ -29,10 +29,10 @@ header {
 }
 
 main {
-    background: linear-gradient(180.22deg, #7E5002 20.16%, #E69405 36.19%, #FAD121 98.57%);
+    background: linear-gradient(180.22deg, #7e5002 20.16%, #e69405 36.19%, #fad121 98.57%);
     width: 100%;
     .section-dino h2 {
-        color: #FCFDFC;
+        color: #fcfdfc;
         padding: 50px 20px;
         text-align: center;
     }
@@ -63,12 +63,58 @@ main {
     .video-dino {
         padding: 20px;
         video {
-            box-shadow: 15px 15px 10px #001;
+            box-shadow: 15px 15px #001;
+            cursor: pointer;
             width: 100%;
+        }
+        .slideshow-container {
+            margin: 30px auto;
+            max-width: 100%;
+            position: relative;
+            .slides {
+                display: none;
+                .img-slide {
+                    box-shadow: 15px 15px #001;
+                    width: 100%;
+                }
+            }
+            .fade {
+                animation: fade 1.5s;
+            }
+            .number-img {
+                background-color: rgba(63, 63, 63, 0.8);
+                color: #fafafa;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+            }
+            .btn-prev,
+            .btn-next {
+                background-color: rgba(63, 63, 63, 0.8);
+                border-radius: 3px;
+                color: #fafafa;
+                cursor: pointer;
+                font-weight: bold;
+                font-size: 18px;
+                margin-top: -22px;
+                padding: 16px;
+                position: absolute;
+                top: 50%;
+                transition: 0.6s ease;
+                user-select: none;
+                width: auto;
+                &:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+            }
+            .btn-next {
+                right: 0;
+            }
         }
         .btn-play {
             align-items: center;
-            background-image: url('../img/Btn.png');
+            background-image: url("../img/Btn.png");
             background-size: 100%;
             color: #faffff;
             display: flex;
@@ -86,11 +132,11 @@ main {
     }
     .about-game {
         h3 {
-            color: #73263D;
+            color: #73263d;
             text-align: center;
         }
         li {
-            color: #3D1132;
+            color: #3d1132;
             font-weight: bold;
             margin: 10px 17px;
             max-width: 80ch;
@@ -99,14 +145,14 @@ main {
     }
     .requirements {
         dl {
-            color: #3D1132;
+            color: #3d1132;
             font-weight: bold;
             margin: 10px 17px;
             max-width: 80ch;
             text-align: center;
         }
         h3 {
-            color: #73263D;
+            color: #73263d;
             text-align: center;
         }
     }
@@ -125,14 +171,26 @@ main {
             height: 28px;
             width: 30px;
         }
-        [href="https://www.twitch.tv/dininho"] {
+        [href="https://www.twitch.tv/dininho"]
+        {
             background-image: url("../img/twitch.png");
         }
-        [href="https://www.twitter.com/dinobonoide"] {
+        [href="https://www.twitter.com/dinobonoide"]
+        {
             background-image: url("../img/twitter.png");
         }
-        [href="https://discord.gg/96hejEn"] {
+        [href="https://discord.gg/96hejEn"]
+        {
             background-image: url("../img/discord.png");
         }
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
     }
 }
